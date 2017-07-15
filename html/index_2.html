@@ -31,38 +31,74 @@
 
   </head>
   <body>
-    <div class="" style="width : 100%; height : 30px; background-color: rgb(190,200,250); text-align: center;">
+    <style media="screen">
+      table {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      tr {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+      }
+      div.header {
+        width: 100%;
+        height: auto;
+        background-color: rgb(190, 200, 250);
+        text-align: center;
+      }
+      div.content {
+        width: 100%;
+        height: auto;
+        background-color: rgb(240, 240, 240);
+      }
+      .women {
+        color: red;
+      }
+      .men {
+        color: blue;
+      }
+      #phone {
+        color: orange;
+      }
+      #highlight-men-3 {
+        font-weight: bold;
+      }
+    </style>
+    <div class="header">
       <h1>회원 명부</h1>
     </div>
-    <div class="" style="width : 100%; height : 500px; background-color: white;">
-      <table style="width: 100%; border : 1px solid black; border-collapse : collapse;">
+    <div class="content">
+      <table>
         <tr>
           <th>순번</th>
           <th>이름</th>
           <th>성별</th>
-          <th>전화번호</th>
+          <th id="phone">전화번호</th>
         </tr>
-        <tr style="border : 1px solid black;"> <!-- table row -->
-          <td style="border : 1px solid black;">1</td>
-          <td style="border : 1px solid black;">Sean</td>
-          <td style="border : 1px solid black;">남자</td>
-          <td style="border : 1px solid black;">01051843188</td>
-        </tr>
-        <tr>
-          <td style="border : 1px solid black;">2</td>
-          <td style="border : 1px solid black;"><span style="color : blue;">Erin</td>
-          <td style="border : 1px solid black;">여자</td>
-          <td style="border : 1px solid black;">01099039590</td>
+        <tr> <!-- table row -->
+          <td>1</td>
+          <td>Sean</td>
+          <td class="men">남자</td>
+          <td>01051843188</td>
         </tr>
         <tr>
-          <td style="border : 1px solid black;">2</td>
-          <td rowspan="2" style="border : 1px solid black;">Erin</td>
-          <td colspan="2" style="border : 1px solid black;">여자</td>
+          <td>2</td>
+          <td>Erin</td>
+          <td class="women">여자</td>
+          <td>01099039590</td>
         </tr>
         <tr>
-          <td style="border : 1px solid black;">2</td>
-          <td style="border : 1px solid black;">여자</td>
-          <td style="border : 1px solid black;">01099039590</td>
+          <td>2</td>
+          <td rowspan="2">Erin</td>
+          <td id="highlight-men-3"class="women" colspan="2">여자</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="women">여자</td>
+          <td>01099039590</td>
         </tr>
       </table>
     </div>
