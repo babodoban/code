@@ -32,6 +32,8 @@
   </head>
   <body>
     <style media="screen">
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
       table {
         width: 100%;
         border: 1px solid black;
@@ -66,39 +68,88 @@
       #highlight-men-3 {
         font-weight: bold;
       }
+      .font-size-small {
+        font-size: 1.0em;   <!-- px, pt 가 있고, em 이라는 단위도 있다. 화면비율에 따라서 -->
+      }
+      .font-size-medium {
+        font-size: 1.1em;
+      }
+      .font-size-large {
+        font-size: 1.5em;
+      }
+      .font-color-01 {
+        color: red;
+      }
+      .font-color-02 {
+        color: blue;
+      }
+      .font-color-03 {
+        color: yellow;
+      }
+      .font-weight-01 {
+        font-weight: normal;
+      }
+      .font-weight-02 {
+        font-weight: bold;
+      }
+      .text-decoration-underline {
+        text-decoration: underline;
+      }
+      .font-family-01 {
+        font-family: "Times New Roman";
+      }
+      .font-family-02 {
+        font-family: "Malgun Gothic";
+      }
+      .font-family-03 {
+        font-family: 'Open Sans Condensed', sans-serif;
+      }
     </style>
     <div class="header">
-      <h1>회원 명부</h1>
+      <h1>CSS 스타일 목록</h1>
     </div>
     <div class="content">
       <table>
         <tr>
-          <th>순번</th>
-          <th>이름</th>
-          <th>성별</th>
-          <th id="phone">전화번호</th>
-        </tr>
-        <tr> <!-- table row -->
-          <td>1</td>
-          <td>Sean</td>
-          <td class="men">남자</td>
-          <td>01051843188</td>
+          <th>스타일</th>
+          <th>미리보기</th>
         </tr>
         <tr>
-          <td>2</td>
-          <td>Erin</td>
-          <td class="women">여자</td>
-          <td>01099039590</td>
+          <td>글자 크기 (font-size)</td>
+          <td>
+            <span class="font-size-small">미리보기 글자입니다.</span><br>
+            <span class="font-size-medium">미리보기 글자입니다.</span><br>
+            <span class="font-size-large">미리보기 글자입니다.</span>
+          </td>
         </tr>
         <tr>
-          <td>2</td>
-          <td rowspan="2">Erin</td>
-          <td id="highlight-men-3"class="women" colspan="2">여자</td>
+          <td>글자 색상 (color)</td>
+          <td>
+            <span class="font-color-01">미리보기</span><br>
+            <span class="font-color-02">미리보기</span><br>
+            <span class="font-color-03">미리보기</span>
+          </td>
         </tr>
         <tr>
-          <td>2</td>
-          <td class="women">여자</td>
-          <td>01099039590</td>
+          <td>글자 굵기 (font-weight)</td>
+          <td>
+            <span class="font-weight-01">미리보기</span>
+            <span class="font-weight-02">미리보기</span>
+          </td>
+        </tr>
+        <tr>
+          <td>글자 밑줄 (text-decoration)</td>
+          <td>
+            <span class="text-decoration-underline">미리보기</span>
+          </td>
+        </tr>
+        <tr>
+          <td>글씨 폰트 (font-family)</td>
+          <td>
+            <span class="font-family-01">Preview 미리보기</span> <br>
+            <span class="font-family-02">Preview 미리보기</span> <br>
+            <span class="font-family-03">Preview 미리보기</span>
+          </td>
         </tr>
       </table>
     </div>
